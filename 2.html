@@ -7,6 +7,105 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        background-color: #f8f9fa;
+        color: #333;
+        overflow-x: hidden;
+        }
+    .hero {
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        color: white;
+        position: relative;
+        padding-bottom: 150px;
+        }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+        opacity: 0.9;
+        }
+    .hero-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 8% 0 8%;
+        }
+    .hero-text {
+        max-width: 50%;
+        }
+    .hero-text h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        }
+    .hero-text p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        opacity: 0.8;
+        line-height: 1.6;
+        }
+    .btn {
+        background-color: #00e5ff;
+        color: #1e3a8a;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        }
+    .btn:hover {
+        background-color: white;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .hero-image {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    }
+    .hero-image img {
+        max-width: 280px;
+        animation: float 3s ease-in-out infinite;
+    }
+</style>
+  <body>
+  <section class="hero">
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#" class="btn" style="color: white; background: rgba(255,255,255,0.2); padding: 8px 18px;">Contact</a>
+            </nav>
+        </header>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>AI And Machine Learning For Smart Systems</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/robot-removebg-preview.png" alt="Robot">
+            </div>
 <body class="bg-gray-100">
 
 <section class="max-w-6xl mx-auto py-16 px-8">
